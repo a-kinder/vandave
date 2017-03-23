@@ -3,8 +3,6 @@
   <title>Candy Shop</title>
 
   <link rel="stylesheet" href="styles.css">
-  <script type="text/javascript"
-      src="en.js"></script>
         <script type="text/javascript"
       src="rivets.bundled.min.js"></script>
         <script type="text/javascript"
@@ -12,9 +10,9 @@
   <body>
       <div id="container">
       <form action="form.php" method="POST">
-        password: <input type="password" name="pass">
-        title: <input name="title" rv-value="data.title">
-        body: <input name="body" rv-value="data.body">
+        Title: <input name="title" rv-value="data.title"><br/>
+        Body: <input name="body" rv-value="data.body"><br/>
+        Password<input type="password" name="pass"><br/>
         <input type="submit" onClick="submit">
         </form>
       </div>
