@@ -15,5 +15,5 @@ if(isset($_POST['pass']) && $_POST['pass'] === getenv('PASSWORD')) {
 	die();
 	}
 } else {
-	die('Must provide password');
+	die('Incorrect password');
 }
