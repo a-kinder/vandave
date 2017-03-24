@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
 @import url('https://fonts.googleapis.com/css?family=Mr+De+Haviland');
 body {
-	border-top: 2px solid yellow;
+	border-top: 2px solid #FFD700;
 	padding-top: .5em;
 	background-color: #000;
 	margin:0;
@@ -38,7 +38,7 @@ h1 {
 	margin-left: 0;
 	text-align: center;
 	padding-top: 5em;
-	border-bottom: 2px solid yellow;
+	border-bottom: 2px solid #FFD700;
 }
 .map {
 }
@@ -47,4 +47,8 @@ h1 {
 }
 a {
 	color: #ff0000;
-	text-decoration: none;}
+	text-decoration: none;
+}
+.container{
+	padding: 10px 50px 10px 50px;
+}

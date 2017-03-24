@@ -21,9 +21,14 @@ else {
   var linklang = 'en'
 }
 document.getElementById('langlink').setAttribute('href', '?lang='+linklang);
+document.getElementById('map-link').setAttribute('href', 'map-'+lang+'.pdf');
 document.getElementById("anrsvp").setAttribute('src', 'https://daveandvan.anrsvp.com/'+lang+'/');
-
-
+if(lang === 'fr'){
+  document.getElementById("google").setAttribute('src', 'https://www.google.com/maps/embed/v1/directions?key=AIzaSyDKRx6XBs8Jy3dWKBe4MuHhawFFV5fej8A&origin=Bathurst+NB&destination=Solomon+Gardens+NB&zoom=8&language='+lang);
+}
+else{
+  document.getElementById("google").setAttribute('src', 'https://www.google.com/maps/embed/v1/directions?key=AIzaSyDKRx6XBs8Jy3dWKBe4MuHhawFFV5fej8A&origin=Halifax+NS&destination=Solomon+Gardens+NB&zoom=8');
+}
 var getjson = $.getJSON(lang + '.json', function(json) {
-	rivets.bind($('body'), {data: json})
+  rivets.bind($('body'), {data: json, lang: lang})
 });
