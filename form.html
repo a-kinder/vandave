@@ -24,10 +24,10 @@ src="rivets.bundled.min.js"></script>
       <form action="form.php" method="POST">
         <h1>English</h1>
         Language link: <input name="lang-link-en"  class="form-control" rv-value="dataen.lang-link"><br/>
-        Info:<textarea id="info-en" name="info-en"  type="textarea" class="form-control" ><var rv-html="dataen.info"></var></textarea>
+        Info:<textarea id="info-en" name="info-en"  type="textarea" class="form-control" ><var rv-html="dataen.info">{ dataen.info }</var></textarea>
         <h1>French</h1>
         Language link: <input name="lang-link-fr"  class="form-control" rv-value="datafr.lang-link"><br/>
-        Info:<textarea id="info-fr" name="info-fr"  type="textarea" class="form-control" ><var rv-html="datafr.info"></var></textarea>
+        Info:<textarea id="info-fr" name="info-fr"  type="textarea" class="form-control" ><var rv-html="datafr.info">{ datafr.info }</var></textarea>
 
         Password (INSECURE): <input type="password" name="pass" class="form-control"><br/>
         <input type="submit" onClick="submit" class="btn btn-primary">
