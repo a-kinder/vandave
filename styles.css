@@ -9,7 +9,7 @@ body {
 	font-family: 'Julius Sans One', Sans;
 	font-size: 20px;
 }
-h1 {
+.header h1 {
 	font-family: 'Rouge Script', cursive;
 }
 .header {
@@ -34,7 +34,6 @@ h1 {
 	width: 100%;
 	background-color: #ff0000;
 	margin-left: 0;
-	text-align: center;
 	padding-top: 5em;
 	padding-bottom: 5em;
 	border-bottom: 2px solid #FFD700;
