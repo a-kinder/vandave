@@ -1,20 +1,49 @@
-<!DOCTYPE html>
-<html>
-  <title>Candy Shop</title>
-
+ <html>
+ <head>
   <link rel="stylesheet" href="styles.css">
-           
-      <script type="text/javascript"
-      src="rivets.bundled.min.js"></script>
-         <script type="text/javascript"
-      src="jquery-3.2.0.min.js"></script>
-      <body>
-    <div id="container">
-      <h1>title:{ data.title }</h1>
-      
-      <p>body: { data.body }</p>
-    </div>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="text/javascript"
+  src="rivets.bundled.min.js"></script>
+  <script type="text/javascript"
+  src="jquery-3.2.0.min.js"></script>
+</head>
+<body>
+  <a href="?lang=fr" id="langlink">{ data.lang-link }</a>
+  <div class="header">
+    <div class="and">&</div>
+    &nbsp;Van
+    <br>Dave
+  </div>
 
-    <script type="text/javascript" src="rivets.js"></script>
-  </body>
+  <div class="divider">
+    <h1><div id="tagline">{ data.title }</div></h1>
+
+    { data.subtitle }<br/><br/>
+    { data.address-line-1 }<br/>
+    { data.address-line-2 }<br/>
+    { data.address-line-3 }<br/><br/>
+    { data.date }<br/><br/>
+    { data.time }<br/>
+  </div>
+
+  <div class="rsvp">
+    <iframe id="anrsvp" style="display:block;width:100%;height:100%;border:none;overflow:hidden;" 
+    src="https://daveandvan.anrsvp.com/#home">
+  </iframe>
+</div>
+<i class="material-icons" style="font-size:60px;color:red;"><a href="map.pdf" target="_blank">printer</a></i>
+<div class="map">
+  <iframe
+  width="100%"
+  height="500"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDKRx6XBs8Jy3dWKBe4MuHhawFFV5fej8A&origin=Halifax+NS&destination=Solomon+Gardens+NB&zoom=8"
+  allowfullscreen>
+</iframe>
+
+</div>
+
+<script type="text/javascript" src="rivets.js"></script>
+
+</body>
 </html>
