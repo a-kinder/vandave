@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
 <title>Edit info</title>
+  <link rel="stylesheet" href="styles.css">
+
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- include libraries(jQuery, bootstrap) -->
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+
+<!-- include summernote css/js-->
+<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+<script src="summernote.js"></script>
+
 <script type="text/javascript"
 src="rivets.bundled.min.js"></script>
-<script type="text/javascript"
-src="jquery-3.2.0.min.js"></script>
-<body>
-  <div class="container">
-    <form action="form.php" method="POST">
-      <h1>English</h1>
+<!-- <script type="text/javascript"
+  src="jquery-3.2.0.min.js"></script> -->
 
-      Language link: <input name="lang-link-en"  class="form-control" rv-value="dataen.lang-link"><br/>
-      Title: <input name="title-en"  class="form-control" rv-value="dataen.title"><br/>
-      subtitle: <input name="subtitle-en" class="form-control" rv-value="dataen.subtitle"><br/>
-      Address line 1: <input name="add1-en" class="form-control" rv-value="dataen.address-line-1"><br/>
-      Address line 2: <input name="add2-en" class="form-control" rv-value="dataen.address-line-2"><br/>
-      Address line 3: <input name="add3-en" class="form-control" rv-value="dataen.address-line-3"><br/>
-      Date: <input name="date-en" class="form-control" rv-value="dataen.date"><br/>
-      Time: <input name="time-en" class="form-control" rv-value="dataen.time"><br/>
-            <h1>French</h1>
-      Language link: <input name="lang-link-fr"  class="form-control" rv-value="datafr.lang-link"><br/>
-      Title: <input name="title-fr"  class="form-control" rv-value="datafr.title"><br/>
-      subtitle: <input name="subtitle-fr" class="form-control" rv-value="datafr.subtitle"><br/>
-      Address line 1: <input name="add1-fr" class="form-control" rv-value="datafr.address-line-1"><br/>
-      Address line 2: <input name="add2-fr" class="form-control" rv-value="datafr.address-line-2"><br/>
-      Address line 3: <input name="add3-fr" class="form-control" rv-value="datafr.address-line-3"><br/>
-      Date: <input name="date-fr" class="form-control" rv-value="datafr.date"><br/>
-      Time: <input name="time-fr" class="form-control" rv-value="datafr.time"><br/>
+  <body>
+    <div class="container">
+    <a href="/">Back to site</a>
+      <form action="form.php" method="POST">
+        <h1>English</h1>
+        Language link: <input name="lang-link-en"  class="form-control" rv-value="dataen.lang-link"><br/>
+        Info:<textarea id="info-en" name="info-en"  type="textarea" class="form-control" rv-value="dataen.info"><var rv-html="dataen.info"></var></textarea>
+        <h1>French</h1>
+        Language link: <input name="lang-link-fr"  class="form-control" rv-value="datafr.lang-link"><br/>
+        Info:<textarea id="info-fr" name="info-fr"  type="textarea" class="form-control" rv-value="datafr.info"><var rv-html="datafr.info"></var></textarea>
 
-      Password (INSECURE): <input type="password" name="pass" class="form-control"><br/>
-      <input type="submit" onClick="submit" class="btn btn-primary">
-    </form>
-  </div>
-  <script type="text/javascript" src="form.js"></script>
-</body>
-</html>
+        Password (INSECURE): <input type="password" name="pass" class="form-control"><br/>
+        <input type="submit" onClick="submit" class="btn btn-primary">
+      </form>
+    </div>
+    <script type="text/javascript" src="form.js"></script>
+  </body>
+  </html>
