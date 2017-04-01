@@ -29,7 +29,10 @@ body {
 	right: 0;
 	line-height: 1.4em;
 }
-
+.glitter {
+	background-image: url('glitterbg.jpg');
+	height: 40px;
+}
 .divider {
 	width: 100%;
 	background-color: #ff0000;
