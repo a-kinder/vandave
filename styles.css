@@ -8,6 +8,7 @@ body {
 	font-family: 'Julius Sans One', Sans;
 	font-size: 20px;
 }
+
 .header h1 {
 	font-family: 'Rouge Script', cursive;
 }
@@ -39,6 +40,20 @@ body {
 	padding-top: 5em;
 	padding-bottom: 5em;
 	border-bottom: 2px solid #000000;
+}
+.divider a {
+	color: red;
+	padding: 10px 10px 10px 10px;
+	border-left: 8px solid black;
+	background-color: darkred;
+  display:block;
+  width:400px;
+  text-align: center;
+}
+
+.divider a:hover {
+	color: darkred;
+
 }
 .map {
 }
