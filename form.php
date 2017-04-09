@@ -5,7 +5,7 @@ if(isset($_POST['pass']) && $_POST['pass'] === getenv('PASSWORD')) {
 	foreach ($langs as $l)
 	{
 		$langlink = 	filter_var( $_POST['lang-link-' . $l], FILTER_SANITIZE_STRING);
-		$info = 			str_replace('<var rv-html="dataen.info">',"",$_POST['info-' . $l]);
+		$info = 			str_replace('<var rv-html="data' . $l . '.info">',"",$_POST['info-' . $l]);
 		$info = 			str_replace("</var>","",$info);
 	
 		$data = json_encode([
